@@ -8,12 +8,10 @@ from util.sharedUtils import SERVER_PORT
 import time
 
 class LoginGUI:
-    def __init__(self):
+    def __init__(self, client_socket):
 
-        #
         client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # Create a new socket
         client_socket.connect((argv[1] if len(argv) > 1 else "localhost", SERVER_PORT))  # Connect to the socket
-        #
         window = Tk()
 
         window.resizable(0, 0)
