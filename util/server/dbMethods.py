@@ -5,9 +5,11 @@ import util.server.serverUtils as sUtils
 
 
 class DBMethods:
-    # Connect to the solar DB, static instance, always open, until closeConnection is called
-    connection = pymysql.connect(host='solar-vh1', user='cs333', password='cs333',
-                                 db='cs333group3', cursorclass=pymysql.cursors.DictCursor)
+    # Connect to the AWS RDS, static instance, always open, until closeConnection is called
+    connection = pymysql.connect(host='awspychat.ckvqidxuzxfn.us-east-1.rds.amazonaws.com',
+                                 user='Awspychat',
+                                 password='Awspychat',
+                                 db='pychat_database', cursorclass=pymysql.cursors.DictCursor)
 
     @staticmethod
     def register(username, hashed_password):
