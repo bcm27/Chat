@@ -13,6 +13,7 @@
 #### Project Requirements
  - yMySQL library
  - PyJWT library - [Documentation](https://pyjwt.readthedocs.io/en/latest/)
+ - SQL server (hosted on AWS)
 
 You can install these dependencies in the commandline window by typing in:
 
@@ -24,7 +25,7 @@ pip install PyJWT
 #### Installation Instructions
 
 * Copy the pythonChat.zip and extract all the contents to your desired folder.
-* To start the server, simply run server.py in a command line console.
+* To start the server, simply run server.py in a command line console (configured to run locally, both are required).
 * To start the client, simply run the client.py in a command console or double click the file assuming python 3.5< is installed.
 After that a GUI login interface will popup, simply log in with the supplied account or create your own.
 
